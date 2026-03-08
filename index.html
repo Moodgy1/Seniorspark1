@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="favicon for webbsite PNG.png" type="image/png">
+    <title>SeniorSpark</title>
+    <meta name="description" content="SeniorSpark provides trusted elderly services in Egypt, including house cleaning, grocery shopping, and more. Contact us today!">
+</head>
+<body>
+    <header>
+        <h1>Seniorspark</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="home">
+        <h2>Helping Seniors Live Comfortably</h2>
+        <p>We offer services such as house cleaning, grocery shopping, and more to help the elderly in Egypt.</p>
+        <button onclick="showServices()">Explore Services</button>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>House Cleaning</h3>
+                <p>We provide professional cleaning services to keep homes tidy and safe.</p>
+            </div>
+            <div class="service">
+                <h3>Grocery Shopping</h3>
+                <p>We help seniors get groceries delivered right to their door.</p>
+            </div>
+            <div class="service">
+                <h3>Take Me Out on a Walk</h3>
+                <p>We offer assistance for a relaxing walk in the park or around the neighborhood.</p>
+            </div>
+            <div class="service">
+                <h3>Walk My Pets</h3>
+                <p>We can walk your pets and ensure they stay active and happy.</p>
+            </div>
+            <div class="service">
+                <h3>Make Me Food</h3>
+                <p>Enjoy home-cooked meals prepared with care and love.</p>
+            </div>
+            <div class="service">
+                <h3>Entertainment</h3>
+                <p>We offer companionship and engaging activities to keep you entertained.</p>
+            </div>
+            <div class="service">
+                <h3>And More!</h3>
+                <p>We provide additional services tailored to the needs of seniors. Contact us to learn more!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <a href="contact.html">
+            <button>Contact Us</button>
+        </a>
+    </section>
+
+    <script src="app.js"></script>
+    <script>
+        // Failed Dark Mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const modeText = document.getElementById('dark-mode-toggle');
+            if (document.body.classList.contains('dark-mode')) {
+                modeText.innerText = 'Light Mode';
+            } else {
+                modeText.innerText = 'Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
